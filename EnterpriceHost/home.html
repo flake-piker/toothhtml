@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <script src="js/home.js"></script>
+ <link rel="stylesheet" href="css/zy.css" />
+ <link rel="stylesheet" href="css/head.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+
+<div class="zy-content">
+<div class="zy-head">
+			
+			<!-- header top -->
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<ul class="list-inline">
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img  src="images/is.png" alt="" /> English <i class="glyphicon glyphicon-chevron-down"></i></a>
+										<ul class="dropdown-menu">
+											<li>
+												<div class="dropdown">
+													<a class="dropdown-toggle" data-toggle="dropdown" href="void(0)">Japani</a>
+													<ul class="dropdown-menu">
+														<li><a href="#">tt</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a href="#">Hindi</a></li>
+											<li><a href="#">Chinis</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Currency $USD <i class="glyphicon glyphicon-chevron-down"></i></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Pound</a></li>
+											<li><a href="#">Diner</a></li>
+											<li><a href="#">Rupee</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-inline">
+								<li><a href="#" ><i class="glyphicon glyphicon-phone"></i> +88018374345</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-envelope"></i> example@gmail.com</a></li>
+							</ul>	
+						</div>
+						<div class="col-sm-5">
+							<ul class="list-inline pull-right">
+								<li><a href="index.html" ><i class="glyphicon glyphicon-user"></i> 登录</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-heart"></i> Wishlist (0)</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-file"></i> Compare (0)</a></li>
+								<li><a class="register" href="register.html" >注册</a></li>
+							</ul>	
+						</div>	
+					</div>	
+				</div>
+			</div>
+			
+			<!-- logo and adds -->
+			<div class="logo-add">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="logo"><i class="glyphicon glyphicon-erase"></i>E - Market</div>
+						</div>
+						<div class="col-sm-8">
+							<form class="long-search navbar-left" role="search">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search...">
+											<span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+										</div>	
+									</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- header bottom -->
+			<div class="header-bottom">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-default">
+							<div class="container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="header-bottom">
+									<div style="display:inline-block;float:left;margin-left: -15px;background:#1ac4e2;color:#FFFFFF;line-height: 50px;">
+										<span style="display:inline-block;width:200px;text-align: center;">商品分类</span>
+									</div>
+									<ul class="nav navbar-nav">
+										<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a></span>
+											<ul class="dropdown-menu">
+												<li><a href="index.html">Home Page</a></li>
+												<li><a href="index-2.html">Home Page 2</a></li>
+											</ul>	
+										</li>
+										<li><a href="product_detail.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a><span class="label label-danger text-center hidden-xs">New <i class="glyphicon glyphicon-triangle-right"></i></span>
+											<ul class="dropdown-menu">
+												<li><a href="product.html">Products</a></li>
+												<li><a href="product_detail.html">Product Details</a></li>
+												<li><a href="new-product.html">New Products</a></li>
+											</ul>	
+										</li>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="blog-details.html">Blog Detail</a></li>
+										<li class="active"><a href="about-us.html">About Us</a> <span class="label label-info text-center hidden-xs">New <i class="glyphicon glyphicon-triangle-right"></i></span></li>
+										<li><a href="contact-us.html">Contac Us</a></li>
+									</ul>
+									
+								</div>
+							</div>
+						</nav>
+					</div>	
+				</div>	
+			</div>	
+		
+</div>
+<div class="zy-body">
+	<!--
+    	作者：359705093@qq.com
+    	时间：2017-11-09
+    	描述：广告分类区begin
+    -->
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="container">
+				
+		<!--
+        	作者：359705093@qq.com
+        	时间：2017-11-09
+        	描述：分类栏begin
+        -->
+        
+        <div class="zy-main-catalog">
+        		<div class="zy-main-catalog-show" >
+        			<ul>
+	        			<li>分类1</li>
+	        			<li>分类2</li>
+	        			<li>分类3</li>
+        			</ul>
+        		</div>
+        		
+        		<div class="zy-main-catalog-hider">
+        			<div class="catalog-hider-item">
+        				<div class="catalog-hider-item-title"></div>
+        				<div class="catalog-hider-item-list">
+        					<ul>
+        						<li>pp</li>
+        						<li>dd</li>
+        						<li>cc</li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+		</div>
+        <!--
+        	作者：359705093@qq.com
+        	时间：2017-11-09
+        	描述：分类栏end
+        -->
+		
+		<!--
+        	作者：359705093@qq.com
+        	时间：2017-11-09
+        	描述：主广告 begin
+        -->
+        <div style="display: inline-block;vertical-align: top;"id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img class="zy-main-ad-img" src="img/cdl.png" alt="...">
+		      <div class="carousel-caption">
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img class="zy-main-ad-img" src="img/hcz.png" alt="...">
+		      <div class="carousel-caption">
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img class="zy-main-ad-img" src="img/ljy.png" alt="...">
+		      <div class="carousel-caption">
+		      </div>
+		    </div>
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+        <!--
+        	作者：359705093@qq.com
+        	时间：2017-11-09
+        	描述：主广告end
+        -->
+        <!--
+        	作者：359705093@qq.com
+        	时间：2017-11-09
+        	描述：公告信息区start
+        -->
+        <div class="" style="display: inline-block;vertical-align: top;">
+        		头像
+        </div>
+        <!--
+        	作者：359705093@qq.com
+        	时间：2017-11-09
+        	描述：公告信息区end
+        -->
+        		</div>
+        </div>
+	</div>
+	<!--
+    	作者：359705093@qq.com
+    	时间：2017-11-09
+    	描述：广告分类区end
+    -->
+    <!--
+    	作者：359705093@qq.com
+    	时间：2017-11-09
+    	描述：品牌专区start
+    -->
+    <div >
+		<a href="product_detail.html"></a>
+		
+	</div>
+    <!--
+    	作者：359705093@qq.com
+    	时间：2017-11-09
+    	描述：品牌专区end
+    -->
+    <!--
+    	作者：359705093@qq.com
+    	时间：2017-11-09
+    	描述：商品楼层start
+    -->
+    <div class="zy-product-floor">
+	    	<div class="row">
+			<div class="col-sm-12">
+				<div class="container">
+			    		<div class="zy-floor-item">
+			    			<div class="zy-floor-item-title">
+			    				<span class="zy-flool-num">1F</span>
+			    				<span class="zy-product-more">
+			    					<a>more</a>
+			    				</span>
+			    			</div>
+			    			<div class="zy-floor-item-products">
+			    				<ul>
+			    					<li>
+			    						<a href="product_detail.html">
+			    							<div class="floor-li-div">
+				    							<img class="product-small-img" data-src="img/cdl.png"/>
+				    							<div class="zy-home-product-text">
+				    								<h3 class="home-product-content">ndfaingadfdsf法的立法当时发生的
+				    								</h3>
+				    							</div>
+				    						</div>
+			    						</a>
+			    					</li>
+			    					<li>
+			    						<a href="product_detail.html">
+				    						<div class="floor-li-div">
+				    							<img class="product-small-img" data-src="img/cdm.png"/>
+				    							<div class="zy-home-product-text">
+				    								<h3 class="home-product-content">ndfaingadfdsf法的立法当时发生的</h3>
+				    							</div>
+				    						</div>
+				    					</a>
+			    					</li>
+			    					<li>
+			    						<a href="product_detail.html">
+				    						<div class="floor-li-div">
+				    							<img class="product-small-img" data-src="img/lye.png"/>
+				    							<div class="zy-home-product-text">
+				    								<h3 class="home-product-content">ndfaingadfdsf法的立法当时发生的</h3>
+				    							</div>
+				    						</div>
+				    					</a>
+			    					</li>
+			    				</ul>
+			    			</div>
+			    		</div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    		<div class="zy-floor-item"></div>
+			    	</div>
+	    		</div>
+		</div>
+    </div>
+    <!--
+    	作者：359705093@qq.com
+    	时间：2017-11-09
+    	描述：商品楼层end
+    -->
+</div>
+<!--
+	作者：359705093@qq.com
+	时间：2017-11-12
+	描述：滚动楼层start
+-->
+<div id="box">
+	<ul>
+		<li>
+			<a class="num" href="javascript:;" style="display:none">1F</a>
+			<a class="word" href="javascript:;" style="display:block">填充</a>
+		</li>
+		<li>
+			<a class="num" href="javascript:;">2F</a>
+			<a class="word" href="javascript:;">车针</a>
+			</li>
+		<li>
+			<a class="num" href="javascript:;">3F</a>
+			<a class="word" href="javascript:;">内材</a>
+		</li>
+		<li>
+			<a class="num" href="javascript:;">4F</a>
+			<a class="word" href="javascript:;">耗材</a>
+			</li>
+		<li>
+			<a class="num" href="javascript:;">5F</a>
+			<a class="word" href="javascript:;">器械</a>
+		</li>
+		<li>
+			<a class="num" href="javascript:;">6F</a>
+			<a class="word" href="javascript:;">正畸</a>
+			</li>
+		<li>
+			<a class="num" href="javascript:;">7F</a>
+			<a class="word" href="javascript:;">护理</a>
+		</li>
+				<li>
+			<a class="num" href="javascript:;">8F</a>
+			<a class="word" href="javascript:;">种植</a>
+		</li>
+		<li>
+			<a class="num" href="javascript:;">9F</a>
+			<a class="word" href="javascript:;">设备</a>
+		</li>
+		<li>
+			<a class="num" href="javascript:;">10F</a>
+			<a class="word" href="javascript:;">专属</a>
+		</li>
+		<li class="last">
+			<a class="num" href="javascript:;">11F</a>
+			<a class="word" href="javascript:;">服务</a>
+		</li>
+	</ul>
+</div>
+<!--
+	作者：359705093@qq.com
+	时间：2017-11-12
+	描述：滚动楼层end
+-->
+<div class="zy-foot">
+  <div class="zy-catalog"></div>
+  <div class="zy-copyright"></div>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//$('[data-toggle="popover"]').popover();
+	//$(".fload-window").popover('show');
+
+});
+</script>
+</body>
+</html>

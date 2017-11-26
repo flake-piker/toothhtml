@@ -1,0 +1,252 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="parabola.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <style type="text/css">
+    ul li{
+    	list-style: none;
+    }
+.shop_cart {
+    width: 283px;
+    height: 25px;
+    line-height: 25px;
+    padding-top: 8px;
+    
+    font-family: 'microsoft yahei';
+    font-size: 12px;
+    text-indent: 34px;
+    color: #000;
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+}
+.zy-product-img-show,.zy-product-sku{
+    position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.zy-img-bottom {
+   white-space:nowrap;
+}
+
+.zy-img-bottom div{
+    display:inline-block;
+
+}
+
+.zy-product-img-screen{
+    width:300px;
+    height:300px;
+}
+.zy-product-img-screen .zy-focus-img{
+	width:300px;
+    height:300px;
+}
+.zy-product-img-list{
+    height:50px;
+    width:300px;
+    overflow: hidden;
+     position: relative;
+}
+.zy-product-img-list ul{
+     -webkit-padding-start: 0px;
+    position: absolute;
+    top:0;
+    left:0;
+    display:block;
+    white-space:nowrap;
+}
+.zy-product-img-list ul li{
+   display: inline-block;
+    list-style: none;
+    width:50px;
+    height:50px;
+}
+.zy-product-img-list ul li img{
+    width:50px;
+    height:50px;
+}
+.zy-product-img-list ul .active{
+    
+}
+.zy-pre-img,.zy-next-img{
+    height:50px;
+}
+.zy-price-style{
+	color:#FF4400;
+	text-decoration:line-through;
+}
+
+.zy-product-price-list li{
+	font-size: 10px;
+}
+
+.zy-product-price-list .zy-used-price{
+	font-size: 15px;
+}
+.zy-product-price-list .zy-used-price .zy-price-style{
+	font-size: 20px;
+	color: #ff0000;
+	text-decoration:none;
+}
+.zy-product-sku-list ul li{
+	display: inline-block;
+}
+</style>
+</head>
+<body>
+<div class="zy-content"></div>
+<div class="zy-head"></div>
+<div class="zy-body">
+	<div class="zy-product-important">
+		<div class="zy-product-img-show">
+		    <div class="zy-product-img-screen">
+		        <img class="zy-focus-img" src="img/cdl.png"/>
+		    </div>
+		    <div class="zy-img-bottom">
+		        <div class="zy-pre-img">
+		            <i>&lt;</i>
+		        </div>
+		        <div class="zy-product-img-list">
+		            <ul class="zy-img-list-ul">
+		                <li class="zy-trun-li active"> <img src="img/cdl.png"/>
+		                </li><li class="zy-trun-li"> <img  src="img/hcz.png"/>
+		                </li><li class="zy-trun-li"><img src="img/ljy.png"/>
+		                </li><li class="zy-trun-li"> <img src="img/miss.png"/>
+		                </li><li class="zy-trun-li"> <img  src="img/rs.png"/>
+		                </li><li class="zy-trun-li"><img src="img/zhm.png"/>
+		                </li><li class="zy-trun-li"> <img src="img/zzf.png"/>
+		                </li><li class="zy-trun-li"> <img  src="img/cdm.png"/>
+		                </li><li class="zy-trun-li"><img src="img/ljy.png"/>
+		                </li><li class="zy-trun-li"> <img src="img/lye.png"/>
+		                </li></ul>
+		        </div>
+		        <div class="zy-next-img">
+		            <i>&gt;</i>
+		        </div>
+		    </div>
+		</div>
+		<div class="zy-product-sku">
+			<div class="zy-product-title">
+				<h3>人生若只如初见，何事秋风悲画扇</h3>
+			</div>
+			<div class="zy-product-price">
+				<div class="zy-product-price-list">
+					<ul>
+						<li><i></i><span>市场价</span><i></i><span class="zy-price-style">666.00</span></li>
+						<li><i></i><span>男爵价</span><i></i><span class="zy-price-style">555.00</span></li>
+						<li class="zy-used-price"><i></i><span>子爵价</span><i></i><span class="zy-price-style">444.00</span></li>
+						<li><i></i><span>伯爵价</span><i></i><span class="zy-price-style">333.00</span></li>
+						<li><i></i><span>侯爵价</span><i></i><span class="zy-price-style">222.00</span></li>
+					</ul>
+				</div>
+				<div class="zy-user-level">
+					<p>尊贵的xxxx子爵！您距离伯爵还有22222贡献点</p>
+				</div>
+			</div>
+			<div class="zy-product-sku-list">
+				<div id="sku1" class="zy-sku-item">
+					<span>颜色</span>
+					<ul>
+						<li date-parent-id="sku1" id="sku11">红</li>
+						<li date-parent-id="sku1" id="sku12">黄</li>
+						<li date-parent-id="sku1" id="sku13">蓝</li>
+					</ul>
+				</div>
+				<div id="sku2" class="zy-sku-item">
+					<span>大小</span>
+					<ul>
+						<li date-parent-id="sku2" id="sku21">大</li>
+						<li date-parent-id="sku2" id="sku22">中</li>
+						<li date-parent-id="sku2" id="sku23">小</li>
+					</ul>
+				</div>
+			</div>
+			<div class="zy-product-select">
+				<div class="selected-item">
+					<span>黄</span><span>中</span><span class="sku-price"></span>
+					<i></i><span class="sku-count"></span><i></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="flyItem" class="fly_item" data-center="299,60" style=" visibility: hidden; "><img src="bt.png" width="50" height="50"></div>
+<a href="javascript:" class="add_cart_large btnCart" title="addcar">addcar</a>
+<div id="shopCart" class="shop_cart">car <span>29</span></div>
+</body>
+</html>
+<script type="text/javascript">
+/* 本demo演示脚本基于ieBetter.js, 项目地址：https://github.com/zhangxinxu/ieBetter.js */
+
+// 元素以及其他一些变量
+var eleFlyElement = document.querySelector("#flyItem"), eleShopCart = document.querySelector("#shopCart");
+var numberItem = 0;
+// 抛物线运动
+var myParabola = funParabola(eleFlyElement, eleShopCart, {
+    speed: 400,
+    curvature: 0.002,    
+    complete: function() {
+        eleFlyElement.style.visibility = "hidden";
+        eleShopCart.querySelector("span").innerHTML = ++numberItem;
+    }
+});
+// 绑定点击事件
+if (eleFlyElement && eleShopCart) {
+    [].slice.call(document.getElementsByClassName("btnCart")).forEach(function(button) {
+        button.addEventListener("click", function() {
+            // 滚动大小
+            var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+                scrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+            eleFlyElement.style.left = event.clientX + scrollLeft + "px";
+            eleFlyElement.style.top = event.clientY + scrollTop + "px";
+            eleFlyElement.style.visibility = "visible";
+            
+            // 需要重定位
+            myParabola.position().move();  
+        });
+    });
+}
+$(function(){
+    $(".zy-trun-li").off("mouseover").on("mouseover",function(){
+        var choicImg=$(this).find("img");
+        if(choicImg){
+            var imgstr=choicImg.attr("src");
+            
+            $(".zy-focus-img").attr("src",imgstr);
+        }
+        
+    });
+    $(".zy-next-img").off("click").on("click",function(){
+        if($(this).hasClass("disabled"))return;
+        //判断是否到了最后一张
+        var maxLong=$(".zy-img-list-ul").width();
+
+        var moveLeft=$(".zy-img-list-ul").position().left;
+
+         if((300-moveLeft)>=maxLong){
+            $(this).addClass("disabled");
+         }else{
+            $(".zy-img-list-ul").css("left", (moveLeft-50)).fadeIn(500); 
+            $(".zy-pre-img").removeClass("disabled");
+         }
+    });
+     $(".zy-pre-img").off("click").on("click",function(){
+        if($(this).hasClass("disabled"))return;
+        //判断是否到了最后一张
+        var maxLong=$(".zy-img-list-ul").width();
+        var moveLeft=$(".zy-img-list-ul").position().left;
+        if(moveLeft>=-50){
+            $(".zy-img-list-ul").css("left", 0).fadeIn(500); 
+            $(this).addClass("disabled");
+         }else{
+            $(".zy-img-list-ul").css("left", (moveLeft+50)).fadeIn(500); 
+            $(".zy-next-img").removeClass("disabled");
+         }
+        
+    });
+});
+</script>
