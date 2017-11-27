@@ -6,45 +6,39 @@ $(function(){
 			// 在标题栏显示滚动的距离
 			//document.title = ling;
 			// 如果滚动距离大于1534的时候让滚动框出来
-			if(ling>534){
+			if(ling>474){
 				$('#box').show();
 			}
-			if(534<ling && ling<2300){
+			if(474<ling && ling<974){
 				// 让第一层的数字隐藏，文字显示，让其他兄弟元素的li数字显示，文字隐藏
 				$('#box ul li').eq(0).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(0).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<3020){
+			}else if(ling<1484){
 				$('#box ul li').eq(1).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(1).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<3595){
+			}else if(ling<1994){
 				$('#box ul li').eq(2).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(2).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<4170){
+			}else if(ling<2504){
 				$('#box ul li').eq(3).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(3).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<4885){
+			}else if(ling<3014){
 				$('#box ul li').eq(4).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(4).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<5460){
+			}else if(ling<3524){
 				$('#box ul li').eq(5).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(5).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<6035){
+			}else if(ling<4034){
 				$('#box ul li').eq(6).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(6).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<6645){
+			}else if(ling<4544){
 				$('#box ul li').eq(7).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(7).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<7360){
+			}else if(ling<5054){
 				$('#box ul li').eq(8).find('.num').hide().siblings('.word').css('display','block');
 				$('#box ul li').eq(8).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<7905){
-				$('#box ul li').eq(9).find('.num').hide().siblings('.word').css('display','block');
-				$('#box ul li').eq(9).siblings('li').find('.num').css('display','block').siblings('.word').hide();
-			}else if(ling<8790){
-				$('#box ul li').eq(10).find('.num').hide().siblings('.word').css('display','block');
-				$('#box ul li').eq(10).siblings('li').find('.num').css('display','block').siblings('.word').hide();
 			}
-			if(ling>8800 || ling<1534){
+			if(ling>8800 || ling<474){
 				// $('#box').css('display','none');  // @ 这一句和下一句效果一样。
 				$('#box').hide();
 			}

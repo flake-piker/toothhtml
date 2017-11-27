@@ -40,7 +40,13 @@
 	margin-top:20px ;
 	height: 500px;
 	width: 100%;
-	background: #FF0000;
+	box-shadow: 0px 0px 50px rgba(34, 25, 25, 0.2);
+}
+.zy-floor-item-title{
+	font-size: 20px;
+	padding:10px 20px 5px 20px;
+	margin-bottom: 10px;
+	border-bottom:solid 1px #dddddd ;
 }
 .zy-product-more{
 	float: right;
@@ -48,17 +54,18 @@
 }
 .zy-floor-item-products .product-small-img{
 	width:200px;
-	height: 300px;
+	height: 200px;
 }
 .floor-li-div{
 	position: relative;
 	display: inline-block;
 	width:200px;
-	height: 300px;
+	height: 200px;
 }
 .zy-floor-item-products ul li{
 	display: inline-block;
 	cursor: pointer;
+	margin: 0px 10px 10px 0px;
 }
 
 .zy-home-product-text{
@@ -67,15 +74,30 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
+	
 }
 .home-product-content{
 	position: relative;
-	
-	background: rgba(239, 95, 33, 0.64);
+	color: #eeeeee;
+	background: rgba(60, 58, 58, 0.84);
 	background-size: 100% 100%;
 	top: 0px;
 	margin: 0;
-	height: 300px;
+	height: 200px;
+	padding:10px 5px 10px 5px;
+}
+.zy-home-product-text .home-product-title{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.zy-home-product-text .home-product-old-price{
+	font-size: 15px;
+	color: #CB1C39;
+	text-decoration: line-through;
+}
+.zy-home-product-text .home-product-price{
+	font-size: 18px;
+	color: #CB1C39;
 }
 /*商品楼层end*/
 /*滚动楼层导航start*/
