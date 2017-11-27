@@ -8,3 +8,6 @@ ul{
 	text-align: center;
 	padding-top:20px;
 }
+.zy-shadow{
+	box-shadow: 0px 0px 50px rgba(34, 25, 25, 0.2);
+}

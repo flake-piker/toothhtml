@@ -3,30 +3,37 @@
 <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="parabola.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/zy.css" />
+ <link rel="stylesheet" href="css/head.css" />
     <style type="text/css">
     ul li{
     	list-style: none;
     }
 .shop_cart {
-    width: 283px;
-    height: 25px;
+    width: 150px;
+    height: 30px;
     line-height: 25px;
-    padding-top: 8px;
+    padding: 2px 8px;
     
     font-family: 'microsoft yahei';
-    font-size: 12px;
+    font-size: 16px;
     text-indent: 34px;
-    color: #000;
+    background: #000000;
+    color: #fff;
     position: fixed;
-    right: 10px;
+    right: 0;
     bottom: 0;
 }
 .zy-product-img-show,.zy-product-sku{
     position: relative;
 	display: inline-block;
 	vertical-align: top;
+	
 }
+
 .zy-img-bottom {
    white-space:nowrap;
 }
@@ -98,13 +105,130 @@
 </head>
 <body>
 <div class="zy-content"></div>
-<div class="zy-head"></div>
+<div class="zy-head">
+			
+			<!-- header top -->
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<ul class="list-inline">
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img  src="images/is.png" alt="" /> 微信公众号 <i class="glyphicon glyphicon-chevron-down"></i></a>
+										<ul class="dropdown-menu">
+											<li>
+												<div class="dropdown" style="text-align:center;">
+													<img src="img/rs.png" style="width:100px;height:100px;"/>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">App下载 <i class="glyphicon glyphicon-chevron-down"></i></a>
+										<ul class="dropdown-menu">
+											<li>
+												<div class="dropdown" style="text-align:center;">
+													<p>Android</p>
+													<img src="img/rs.png" style="width:100px;height:100px;"/>
+													<p>Ios</p>
+													<img src="img/zzf.png" style="width:100px;height:100px;"/>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-inline">
+								<li><a href="#" ><i class="glyphicon glyphicon-phone"></i> +88018374345</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-envelope"></i> example@gmail.com</a></li>
+							</ul>	
+						</div>
+						<div class="col-sm-5">
+							<ul class="list-inline pull-right">
+								<li><a href="index.html" ><i class="glyphicon glyphicon-user"></i> 登录</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-heart"></i> 购物车 (0)</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-file"></i> 消息 (0)</a></li>
+								<li><a class="register" href="register.html" >注册</a></li>
+							</ul>	
+						</div>	
+					</div>	
+				</div>
+			</div>
+			
+			<!-- logo and adds -->
+			<div class="logo-add">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="logo"><i class="glyphicon glyphicon-erase"></i>E - Market</div>
+						</div>
+						<div class="col-sm-8">
+							<form class="long-search navbar-left" role="search">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search...">
+											<span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+										</div>	
+									</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- header bottom -->
+			<div class="header-bottom">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-default">
+							<div class="container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="header-bottom">
+									<div style="display:inline-block;float:left;margin-left: -15px;background:#1ac4e2;color:#FFFFFF;line-height: 50px;">
+										<span style="display:inline-block;width:200px;text-align: center;">商品分类</span>
+									</div>
+									<ul class="nav navbar-nav">
+										<li  class="active"><a href="home.html"  aria-haspopup="true" aria-expanded="false">首页</a>
+												
+										</li>
+										<li><a href="product_detail.html">热卖</a><span class="label label-danger text-center hidden-xs">HOT <i class="glyphicon glyphicon-triangle-right"></i></span>
+										</li>
+										<li><a href="faq.html">活动</a></li>
+										<li><a href="blog.html">限时抢</a></li>
+										<li><a href="about-us.html">新品上架</a> <span class="label label-info text-center hidden-xs">NEW <i class="glyphicon glyphicon-triangle-right"></i></span></li>
+									</ul>
+									
+								</div>
+							</div>
+						</nav>
+					</div>	
+				</div>	
+			</div>	
+		
+</div>
 <div class="zy-body">
-	<div class="zy-product-important">
+	<div class="row">
+			<div class="col-sm-12">
+				<div class="container">
+	<div class="zy-product-important  zy-shadow">
 		<div class="zy-product-img-show">
 		    <div class="zy-product-img-screen">
 		        <img class="zy-focus-img" src="img/cdl.png"/>
 		    </div>
+		    <div id="flyItem" class="fly_item" data-center="299,60" style=" visibility: hidden; "><img src="img/hcz.png" width="50" height="50"></div>
 		    <div class="zy-img-bottom">
 		        <div class="zy-pre-img">
 		            <i>&lt;</i>
@@ -143,7 +267,18 @@
 					</ul>
 				</div>
 				<div class="zy-user-level">
-					<p>尊贵的xxxx子爵！您距离伯爵还有22222贡献点</p>
+					<div class="progress">
+						  <div class="progress-bar progress-bar-success" style="width: 35%">
+						    <span class="sr-only">35% Complete (success)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+						    <span class="sr-only">20% Complete (warning)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-danger" style="width: 10%">
+						    <span class="sr-only">10% Complete (danger)</span>
+						  </div>
+						</div>
+					<p>尊贵的xxxx子爵！您距离伯爵还差22222贡献点</p>
 				</div>
 			</div>
 			<div class="zy-product-sku-list">
@@ -170,12 +305,45 @@
 					<i></i><span class="sku-count"></span><i></i>
 				</div>
 			</div>
+			<div>
+				<button class="btn btn-danger">马上购买</button>
+				<button class="btn btn-warning btnCart">加入购物车</button>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+</div>
+
+
+<div id="shopCart" class="shop_cart">
+	<i class="lyphicon glyphicon-shopping-cart"></i>&nbsp;&nbsp;购物车(<span>29</span>)
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="container">
+			<div class="zy-shadow" style="margin-top:20px;">
+
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">商品详情</a></li>
+			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">累计评价</a></li>
+			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">商品统计</a></li>
+			  </ul>
+
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="home">商品详细</div>
+			    <div role="tabpanel" class="tab-pane" id="profile">累计评价</div>
+			    <div role="tabpanel" class="tab-pane" id="messages">统计</div>
+			  </div>
+			
+			</div>
 		</div>
 	</div>
 </div>
-<div id="flyItem" class="fly_item" data-center="299,60" style=" visibility: hidden; "><img src="bt.png" width="50" height="50"></div>
-<a href="javascript:" class="add_cart_large btnCart" title="addcar">addcar</a>
-<div id="shopCart" class="shop_cart">car <span>29</span></div>
+
 </body>
 </html>
 <script type="text/javascript">
