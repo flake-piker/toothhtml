@@ -6,9 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <!--<link rel="stylesheet" href="css/bootstrap.min.css" >
+<script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>-->
  <script src="js/home.js"></script>
  <link rel="stylesheet" href="css/zy.css" />
  <link rel="stylesheet" href="css/head.css" />
@@ -63,7 +66,7 @@
 						<div class="col-sm-5">
 							<ul class="list-inline pull-right">
 								<li><a href="index.html" ><i class="glyphicon glyphicon-user"></i> 登录</a></li>
-								<li><a href="#" ><i class="glyphicon glyphicon-heart"></i> 购物车 (0)</a></li>
+								<li><a href="carts.html" ><i class="glyphicon glyphicon-heart"></i> 购物车 (0)</a></li>
 								<li><a href="#" ><i class="glyphicon glyphicon-file"></i> 消息 (0)</a></li>
 								<li><a class="register" href="register.html" >注册</a></li>
 							</ul>	
@@ -109,7 +112,7 @@
 
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="header-bottom">
-									<div style="display:inline-block;float:left;margin-left: -15px;background:#1ac4e2;color:#FFFFFF;line-height: 50px;">
+									<div style="display:inline-block;float:left;margin-left: -15px;background:#EC4F0A;color:#FFFFFF;line-height: 50px;">
 										<span style="display:inline-block;width:200px;text-align: center;">商品分类</span>
 									</div>
 									<ul class="nav navbar-nav">
@@ -150,21 +153,63 @@
         <div class="zy-main-catalog">
         		<div class="zy-main-catalog-show" >
         			<ul>
-	        			<li>分类1</li>
-	        			<li>分类2</li>
-	        			<li>分类3</li>
+	        			<li data-type = "1">分类1</li>
+	        			<li data-type = "2">分类2</li>
+	        			<li data-type = "3">分类3</li>
         			</ul>
         		</div>
         		
-        		<div class="zy-main-catalog-hider">
+        		<div class="zy-main-catalog-hider hider-box1">
         			<div class="catalog-hider-item">
-        				<div class="catalog-hider-item-title"></div>
         				<div class="catalog-hider-item-list">
-        					<ul>
-        						<li>pp</li>
-        						<li>dd</li>
-        						<li>cc</li>
-        					</ul>
+        					<div class='hider-item'>
+        						<div class="hider-item-inner">
+        							<a href="product_list.html">aaaa</a>
+        						</div>
+        						<div class="hider-item-inner">
+        							<ul>
+		        						<li><a href="product_list.html">pp</a></li>
+		        						<li><a href="product_list.html">dd</a></li>
+		        						<li><a href="product_list.html">cc</a></li>
+	        						</ul>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="zy-main-catalog-hider hider-box2">
+        			<div class="catalog-hider-item">
+        				<div class="catalog-hider-item-list">
+        					<div class='hider-item'>
+        						<div class="hider-item-inner">
+        							<a href="product_list.html">bbb</a>
+        						</div>
+        						<div class="hider-item-inner">
+        							<ul>
+		        						<li><a href="product_list.html">bbbbpp</a></li>
+		        						<li><a href="product_list.html">bbbdd</a></li>
+		        						<li><a href="product_list.html">bbbbcc</a></li>
+	        						</ul>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="zy-main-catalog-hider hider-box3">
+        			<div class="catalog-hider-item">
+        				<div class="catalog-hider-item-list">
+        					<div class='hider-item'>
+        						<div class="hider-item-inner">
+        							<a href="product_list.html">ccc</a>
+        						</div>
+        						<div class="hider-item-inner">
+        							<ul>
+		        						<li><a href="product_list.html">cccpp</a></li>
+		        						<li><a href="product_list.html">ccccdd</a></li>
+		        						<li><a href="product_list.html">cccccc</a></li>
+	        						</ul>
+        						</div>
+        					</div>
         				</div>
         			</div>
         		</div>
@@ -233,6 +278,20 @@
         				<img style="width:50px;height:50px;border-radius: 50px;margin-bottom:5px ;" src="img/ljy.png" />
         				<p></p><i class="glyphicon glyphicon-queen"></i>&nbsp;&nbsp;当前爵位：子爵
         			</div>
+        			<div class="zy-user-level">
+					<div class="progress">
+						  <div class="progress-bar progress-bar-success" style="width: 35%">
+						    <span class="sr-only">35% Complete (success)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+						    <span class="sr-only">20% Complete (warning)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-danger" style="width: 10%">
+						    <span class="sr-only">10% Complete (danger)</span>
+						  </div>
+						</div>
+					<p>尊贵的xxxx子爵！您距离伯爵还差22222贡献点</p>
+				</div>
         			<div style="padding:5px;">
         				<a><i class="glyphicon glyphicon-repeat"></i>&nbsp;&nbsp;待支付（10）</a>
         				<a><i class="glyphicon glyphicon-repeat"></i>&nbsp;&nbsp;待发货（10）</a><p></p>
@@ -281,7 +340,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">1F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    			<div class="zy-floor-item-products">
@@ -505,7 +564,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">2F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -513,7 +572,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">3F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -521,7 +580,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">4F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -529,7 +588,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">5F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -537,7 +596,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">6F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -545,7 +604,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">7F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -553,7 +612,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">8F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>
@@ -561,7 +620,7 @@
 			    			<div class="zy-floor-item-title">
 			    				<span class="zy-flool-num">9F</span>
 			    				<span class="zy-product-more">
-			    					<a>more</a>
+			    					<a href="product_list.html">more</a>
 			    				</span>
 			    			</div>
 			    		</div>

@@ -48,6 +48,17 @@ $(function(){
 	})
 
 	$(function(){
+		//when mouse live catalog stage;
+		$(".zy-main-catalog").on("mouseleave",function(){
+			
+			$(".zy-main-catalog-hider").hide();
+		});
+		//when mouse focus on anyone catalog;
+		$(".zy-main-catalog-show ul li").on("mouseover",function(){
+			$(".zy-main-catalog-hider").hide();
+			console.log($(this).data("type"));
+			$(".hider-box"+$(this).data("type")).show();
+		});
 		$('#box ul li').hover(function(){
 			$(this).find('.num').hide().siblings('.word').css({'display':'block','background':'#CB1C39','color':'white'});
 		},function(){

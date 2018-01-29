@@ -1,0 +1,412 @@
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="parabola.js"></script>
+ <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <!--<link rel="stylesheet" href="css/bootstrap.min.css" >
+<script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>-->
+<link rel="stylesheet" href="css/zy.css" />
+ <link rel="stylesheet" href="css/head.css" />
+<style type="text/css">
+.zy-carts-box{
+	padding:30px 20px;
+}
+.zy-cart-item{
+	margin-top: 10px;
+	width:90%;
+	margin-left:5% ;
+	padding: 10px;
+}
+.zy-cart-child{
+	margin-bottom: 10px;
+	padding-top:5px;
+	line-height: 50px;
+	border-top:solid 1px #bdf017 ;
+}
+.zy-child-delete,.zy-child-checked,.zy-child-image,.zy-child-type,.zy-child-unit-price,.zy-child-count,.zy-child-price{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+.zy-child-delete{
+	padding: 5px 10px;
+	background-color: #e4765d;
+	color: #FFFFFF;
+	border-radius: 50;
+	-moz-border-radius: 50;
+	cursor: pointer;
+	-webkit-transition: all 1.5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+}
+.zy-child-delete:hover{
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	background-color: #e43923;
+}
+.zy-child-checked{
+	padding: 0px 10px;
+}
+.zy-child-type{
+	width:200px;
+}
+.zy-child-unit-price{
+	width:150px;
+}
+.zy-child-count{
+	width:150px;
+}
+.zy-child-price{
+	width:200px;
+}
+.zy-child-image{
+	width: 80;
+	height: 80;
+	overflow: hidden;
+}
+.zy-child-image img{
+	width: 80;
+	height: 80;
+	-webkit-transition: all 1.5s ease-in-out;
+	-moz-transition: all 1.5s ease-in-out;
+}
+.zy-child-image img:hover{
+	-webkit-transform: scale(1.7);
+	-moz-transform: scale(1.7);
+}
+.count-bt{
+	cursor: pointer;
+}
+.zy-carts-price{
+	text-align: right;
+	padding:20px 200px 0px 0px;
+	line-height: 30px;
+	
+}
+.zy-carts-price i{
+	line-height: 30px;
+	padding-right:10px;
+}
+.zy-carts-price .carts-total-price{
+	font-weight: 800;
+	color: #FF4400;
+	font-size: 30px;
+	line-height: 30px;
+}
+.zy-carts-buy{
+	text-align: right;
+	padding:20px 200px ;
+	
+}
+</style>
+</head>
+<body>
+<div class="zy-content"></div>
+<div class="zy-head">
+			
+			<!-- header top -->
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3">
+							<ul class="list-inline">
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img  src="images/is.png" alt="" /> 微信公众号 <i class="glyphicon glyphicon-chevron-down"></i></a>
+										<ul class="dropdown-menu">
+											<li>
+												<div class="dropdown" style="text-align:center;">
+													<img src="img/rs.png" style="width:100px;height:100px;"/>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">App下载 <i class="glyphicon glyphicon-chevron-down"></i></a>
+										<ul class="dropdown-menu">
+											<li>
+												<div class="dropdown" style="text-align:center;">
+													<p>Android</p>
+													<img src="img/rs.png" style="width:100px;height:100px;"/>
+													<p>Ios</p>
+													<img src="img/zzf.png" style="width:100px;height:100px;"/>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4">
+							<ul class="list-inline">
+								<li><a href="#" ><i class="glyphicon glyphicon-phone"></i> +88018374345</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-envelope"></i> example@gmail.com</a></li>
+							</ul>	
+						</div>
+						<div class="col-sm-5">
+							<ul class="list-inline pull-right">
+								<li><a href="index.html" ><i class="glyphicon glyphicon-user"></i> 登录</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-heart"></i> 购物车 (0)</a></li>
+								<li><a href="#" ><i class="glyphicon glyphicon-file"></i> 消息 (0)</a></li>
+								<li><a class="register" href="register.html" >注册</a></li>
+							</ul>	
+						</div>	
+					</div>	
+				</div>
+			</div>
+			
+			<!-- logo and adds -->
+			<div class="logo-add">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="logo"><i class="glyphicon glyphicon-erase"></i>E - Market</div>
+						</div>
+						<div class="col-sm-8">
+							<form class="long-search navbar-left" role="search">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Search...">
+											<span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+										</div>	
+									</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- header bottom -->
+			<div class="header-bottom">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-default">
+							<div class="container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="header-bottom">
+									<div style="display:inline-block;float:left;margin-left: -15px;background:#1ac4e2;color:#FFFFFF;line-height: 50px;">
+										<span style="display:inline-block;width:200px;text-align: center;">商品分类</span>
+									</div>
+									<ul class="nav navbar-nav">
+										<li  class="active"><a href="home.html"  aria-haspopup="true" aria-expanded="false">首页</a>
+												
+										</li>
+										<li><a href="product_detail.html">热卖</a><span class="label label-danger text-center hidden-xs">HOT <i class="glyphicon glyphicon-triangle-right"></i></span>
+										</li>
+										<li><a href="faq.html">活动</a></li>
+										<li><a href="blog.html">限时抢</a></li>
+										<li><a href="about-us.html">新品上架</a> <span class="label label-info text-center hidden-xs">NEW <i class="glyphicon glyphicon-triangle-right"></i></span></li>
+									</ul>
+									
+								</div>
+							</div>
+						</nav>
+					</div>	
+				</div>	
+			</div>	
+		
+</div>
+<div class="zy-body">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="container">
+				<div class="zy-carts-box zy-shadow">
+					<div class="zy-cart-item zy-shadow">
+						<div class="zy-cart-item-title"><a href="product_detail.html">一树梨花</a></div>
+						<div class="zy-cart-child">
+							<div class="zy-child-checked">
+								<input type="checkbox" class="checked-bt" data-num = "1" checked="checked"></input>
+							</div>
+							<div class="zy-child-image">
+								<img src="img/cdm.png" />
+							</div>
+							<div class="zy-child-type">小件</div>
+							<div class="zy-child-unit-price"><i>单价:</i><span class="unit-price unit-price1">573.72</span></div>
+							<div class="zy-child-count">
+								<div class="input-group col-sm-12">
+									<span class="input-group-addon count-bt add-bt1" data-type="1" data-num="1">+</span>
+									<input type="text" data-num="1" maxlength="4" class="form-control pru-count pru-count1" value="1">
+									<span class="input-group-addon count-bt dec-bt1" data-type="2" data-num="1">-</span>
+								</div>
+							</div>
+							<div class="zy-child-price"><i>¥</i><span class="child-total calculate-on child-total1">573.72</span></div>
+							<div class="zy-child-delete">删除</div>
+						</div>
+						<div class="zy-cart-child">
+							<div class="zy-child-checked">
+								<input type="checkbox" class="checked-bt" data-num = "2" checked="checked"></input>
+							</div>
+							<div class="zy-child-image">
+								<img src="img/cdm.png" />
+							</div>
+							<div class="zy-child-type">大件</div>
+							<div class="zy-child-unit-price"><i>单价:</i><span class="unit-price unit-price2">23.72</span></div>
+							<div class="zy-child-count">
+								<div class="input-group col-sm-12">
+									<span class="input-group-addon count-bt add-bt2" data-type="1" data-num="2">+</span>
+									<input type="text" data-num="2" maxlength="4" class="form-control pru-count pru-count2" value="1">
+									<span class="input-group-addon count-bt dec-bt2" data-type="2" data-num="2">-</span>
+								</div>
+							</div>
+							<div class="zy-child-price"><i>¥</i><span class="child-total calculate-on child-total2">23.72</span></div>
+							<div class="zy-child-delete">删除</div>
+						</div>
+					</div>
+					<div class="zy-cart-item zy-shadow">
+						<div class="zy-cart-item-title"><a href="product_detail.html">压海棠</a></div>
+						<div class="zy-cart-child">
+							<div class="zy-child-checked">
+								<input type="checkbox" class="checked-bt" data-num = "3" checked="checked"></input>
+							</div>
+							<div class="zy-child-image">
+								<img src="img/cdm.png" />
+							</div>
+							<div class="zy-child-type">小件</div>
+							<div class="zy-child-unit-price"><i>单价:</i><span class="unit-price unit-price3">234.12</span></div>
+							<div class="zy-child-count">
+								<div class="input-group col-sm-12">
+									<span class="input-group-addon count-bt add-bt3" data-type="1" data-num="3">+</span>
+									<input type="text" data-num="3" maxlength="4" class="form-control pru-count pru-count3" value="1">
+									<span class="input-group-addon count-bt dec-bt3" data-type="2" data-num="3">-</span>
+								</div>
+							</div>
+							<div class="zy-child-price"><i>¥</i><span class="child-total calculate-on child-total3">234.12</span></div>
+							<div class="zy-child-delete">删除</div>
+						</div>
+						<div class="zy-cart-child">
+							<div class="zy-child-checked">
+								<input type="checkbox" class="checked-bt" data-num = "4" checked="checked"></input>
+							</div>
+							<div class="zy-child-image">
+								<img src="img/cdm.png" />
+							</div>
+							<div class="zy-child-type">大件</div>
+							<div class="zy-child-unit-price"><i>单价:</i><span class="unit-price unit-price4">1522.00</span></div>
+							<div class="zy-child-count">
+								<div class="input-group col-sm-12">
+									<span class="input-group-addon count-bt add-bt4" data-type="1" data-num="4">+</span>
+									<input type="text" data-num="4" maxlength="4" class="form-control pru-count pru-count4" value="1">
+									<span class="input-group-addon count-bt dec-bt4" data-type="2" data-num="4">-</span>
+								</div>
+							</div>
+							<div class="zy-child-price"><i>¥</i><span class="child-total calculate-on child-total4">1522.00</span></div>
+							<div class="zy-child-delete">删除</div>
+						</div>
+						
+					</div>
+					
+					<div class="zy-carts-price"><i>总价:¥</i><span class="carts-total-price"></span></div>
+					<div class="zy-carts-buy"><button type="button" class="btn btn-danger">&nbsp;确&nbsp;认&nbsp;下&nbsp;单&nbsp;</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".pru-count").change(function(){
+	//验证输入是否是数字，不是就变为1
+	//小于1就变1，大于9999就变为9999
+	
+	var num=$(this).data("num");
+	valicateCount(num)
+	childPrice(num);
+	cartsPrice();
+});
+$(".count-bt").click(function(){
+	var type=$(this).data("type");
+	var num=$(this).data("num");
+	if(type==1){
+		$(".pru-count"+num).val(parseInt($(".pru-count"+num).val())+1);
+	}else{
+		$(".pru-count"+num).val(parseInt($(".pru-count"+num).val())-1);
+	}
+	valicateCount(num);
+	childPrice(num);
+	cartsPrice();
+});
+$(".checked-bt").click(function(){
+	
+	var num=$(this).data("num");
+	if($(this).prop("checked")){//选择
+		$(".child-total"+num).addClass("calculate-on");
+	}else{//取消
+		$(".child-total"+num).removeClass("calculate-on");
+	}
+	cartsPrice();
+});
+$(".zy-child-delete").click(function(){
+	var preObj=$(this).parent();
+	var cartItem=preObj.parent();
+	preObj.remove();
+	var bb=cartItem.find(".zy-cart-child");
+	if(bb.length){}else{
+		cartItem.remove();
+	}
+	cartsPrice();
+});
+cartsPrice();
+});
+//验证数量输入
+function valicateCount(num){
+	var curCount=$(".pru-count"+num).val();
+	var reg=/^\d*$/;
+	if(reg.test(curCount)){
+		if(parseInt(curCount)<1){
+			$(".pru-count"+num).val(1);
+		}else if(parseInt(curCount)>9999){
+			$(".pru-count"+num).val(9999);
+		}
+	}else{
+		$(".pru-count"+num).val(1);
+	} 
+}
+//计算单个总价格
+function childPrice(num){
+	var childPrice=0;
+	var thisPrice=parseInt($(".pru-count"+num).val())*parseInt(cutPoint($(".unit-price"+num).text()));
+	$(".child-total"+num).empty().text(addPoint(thisPrice+''));
+}
+//计算购物车总价格
+function cartsPrice(){
+	var totalPrice=0;
+	$(".calculate-on").each(function(){
+		totalPrice+=parseInt(cutPoint($(this).text()));
+	});
+	$(".carts-total-price").empty().append(addPoint(totalPrice+''));
+}
+//勾选单个商品
+
+//价格去点
+function cutPoint(price){
+	if(price.indexOf(".")>-1){
+		return price.replace(".","");
+	}else{
+		price+"00";
+	}
+}
+//价格加点
+function addPoint(price){
+	if(price.indexOf(".")>-1){
+		return;
+	}else{
+		return price.replace(/(\d*)(\d{2})$/,'$1.$2');
+	}
+}
+</script>

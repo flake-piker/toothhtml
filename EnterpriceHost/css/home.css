@@ -8,7 +8,7 @@
 }
 .zy-main-catalog-show{
 	width:200px;
-	background: #1ac4e2;
+	background: rgb(249, 118, 29);
 	color: #FFFFFF;
 	position: relative;
 }
@@ -25,11 +25,25 @@
 	top:0;
 	left:200px;
 	display: none;
-	background: #EEEEEE;
-}
-.zy-main-catalog:hover .zy-main-catalog-hider{
-	display: block;
+	width:700px;
+	height: 300px;
+	padding:10px 20px;
+	background: #ffffff;
 	z-index: 500;
+}
+
+.hider-item-inner{
+	display:inline-block;
+}
+.inner-left{
+	width:100px;
+}
+.inner-right{
+	width:450px;
+}
+.hider-item-inner ul li{
+	float: left;
+	padding:5px;
 }
 /*商品楼层start*/
 .zy-product-floor{

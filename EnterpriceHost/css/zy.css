@@ -11,3 +11,13 @@ ul{
 .zy-shadow{
 	box-shadow: 0px 0px 50px rgba(34, 25, 25, 0.2);
 }
+.zy-front-deleted{
+	text-decoration:line-through;
+}
+.zy-front-big-red{
+	font-size: 20px;
+	color:red;
+}
+.zy-price-style{
+	
+}
